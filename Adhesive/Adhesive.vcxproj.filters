@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\glfw">
+      <UniqueIdentifier>{7822640f-1845-4987-806f-0ca79c466970}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\glfw\Interfaces">
+      <UniqueIdentifier>{7255ae5c-768c-4d27-854a-82282f815c02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\main">
+      <UniqueIdentifier>{1d465548-76eb-4d72-8c39-3392fede1643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\peg">
+      <UniqueIdentifier>{9d7aa5e1-872c-41ab-b163-7fd55dc4a0d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\peg">
+      <UniqueIdentifier>{1ac3a8e7-9a9a-4a50-8bba-65e1fbb1af88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\main">
+      <UniqueIdentifier>{bd2ece4d-8860-40d2-a320-471d9a30efc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\glfw">
+      <UniqueIdentifier>{f1796afd-a1c9-4266-99b2-be2c732e75f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GlslProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="MyInputHandler.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="GlfwContext.cpp">
+      <Filter>Source Files\glfw</Filter>
+    </ClCompile>
+    <ClCompile Include="GlfwStandardCallbackProvider.cpp">
+      <Filter>Source Files\glfw</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleProgram.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardCamera.cpp">
+      <Filter>Source Files\peg</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardScene.cpp">
+      <Filter>Source Files\peg</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GlslProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GlfwCallbackProvider.h">
+      <Filter>Header Files\glfw\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="GlfwContext.h">
+      <Filter>Header Files\glfw</Filter>
+    </ClInclude>
+    <ClInclude Include="GlfwCallbackGenerator.h">
+      <Filter>Header Files\glfw</Filter>
+    </ClInclude>
+    <ClInclude Include="GlfwStandardCallbackProvider.h">
+      <Filter>Header Files\glfw</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleProgram.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardCamera.h">
+      <Filter>Header Files\peg</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardScene.h">
+      <Filter>Header Files\peg</Filter>
+    </ClInclude>
+    <ClInclude Include="MyInputHandler.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="basic.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="basic.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
