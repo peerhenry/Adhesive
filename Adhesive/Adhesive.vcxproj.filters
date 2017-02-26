@@ -40,11 +40,14 @@
     <Filter Include="Header Files\demo">
       <UniqueIdentifier>{1d465548-76eb-4d72-8c39-3392fede1643}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\freetype">
+      <UniqueIdentifier>{ac3bc2ef-bc6f-4e19-be99-ea41150baf89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\freetype">
+      <UniqueIdentifier>{2da690c3-b3f8-4a18-8217-a3c878cd39d7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MyInputHandler.cpp">
-      <Filter>Source Files\demo</Filter>
-    </ClCompile>
     <ClCompile Include="GlfwContext.cpp">
       <Filter>Source Files\glfw</Filter>
     </ClCompile>
@@ -84,6 +87,12 @@
     <ClCompile Include="PniBuffer.cpp">
       <Filter>Source Files\demo</Filter>
     </ClCompile>
+    <ClCompile Include="DebugHud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="freetype.cpp">
+      <Filter>Source Files\freetype</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -113,9 +122,6 @@
     <ClInclude Include="StandardScene.h">
       <Filter>Header Files\peg</Filter>
     </ClInclude>
-    <ClInclude Include="MyInputHandler.h">
-      <Filter>Header Files\demo</Filter>
-    </ClInclude>
     <ClInclude Include="Rectangle.h">
       <Filter>Header Files\demo</Filter>
     </ClInclude>
@@ -134,6 +140,12 @@
     <ClInclude Include="PniBuffer.h">
       <Filter>Header Files\demo</Filter>
     </ClInclude>
+    <ClInclude Include="DebugHud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype.h">
+      <Filter>Header Files\freetype</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="basic.vert">
@@ -142,5 +154,15 @@
     <None Include="basic.frag">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="fontmap.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="arial.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
   </ItemGroup>
 </Project>

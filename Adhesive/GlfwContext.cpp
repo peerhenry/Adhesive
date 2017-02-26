@@ -12,6 +12,8 @@ void GlfwContext::initialize() {
   if (!glfwInit()) return;
 
   /* Create a windowed mode window and its OpenGL context */
+  //glfwWindowHint(GLFW_DECORATED, false); // hide title bar
+  glfwWindowHint(GLFW_SAMPLES, 4); // anti alias
   window = glfwCreateWindow(width, height, name, NULL, NULL);
   if (!window)
   {
@@ -25,9 +27,6 @@ void GlfwContext::initialize() {
   int yOffset = (1080- height) / 2;
   glfwSetWindowPos(window, xOffset, yOffset);
   graphicsProgram->initialize();
-
-  glm::vec4 cc = glm::vec4(100.0 / 256, 149.0 / 256, 237.0 / 256, 1);
-  glClearColor(cc.r, cc.g, cc.b, cc.a);
 }
 
 GLFWwindow* GlfwContext::getWindow() {

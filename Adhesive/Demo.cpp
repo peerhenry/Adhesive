@@ -3,20 +3,19 @@
 #include <map>
 using std::map;
 
+#include "pegcore/Command.h"
+
 #include "GlslProgram.h"
 #include "StandardScene.h"
 #include "GlfwContext.h"
-#include "MyInputHandler.h"
+#include "StandardCamera.h"
 #include "Cube.h"
 #include "Rectangle.h"
 #include "SimpleProgram.h"
-
 #include "GlfwCallbackGenerator.h"
-
-#include "pegcore/Command.h"
 #include "GlfwStandardCallbackProvider.h"
+#include "DebugHud.h"
 using peg_glfw::GlfwStandardCallbackProvider;
-
 
 
 namespace demo{
@@ -97,13 +96,15 @@ int breakPoint(const char* msg = "") {
 
 int run(void)
 {
-  printf("Starting program");
+  printf("Starting program\n");
   // create dependency tree
+  /*const int width = 1920;
+  const int height = 1080;//*/
   /*const int width = 1600;
   const int height = 900;//*/
-  /*const int width = 1024;
+  const int width = 1024;
   const int height = 768;//*/
-  const int width = 640;
+  /*const int width = 640;
   const int height = 480;//*/
   float aspect = ((float)width) / height;
   const char* name = "Test of cubes";
@@ -117,7 +118,7 @@ int run(void)
 
   StandardCamera camera = StandardCamera(&simpleProgram, glm::radians(45.0f), aspect, 0.1f, 100);
   localCamera = &camera;
-  localCamera->setLocation(0, -40, 0);
+  localCamera->setLocation(0, -40, 1);
 
   CursorCallback cursorCallback = [](double x, double y, double dx, double dy) {
     double dTheta = 0.005 * dx;
@@ -151,14 +152,17 @@ int run(void)
   cube3.setColor(0, 0, 1);
   scene.addSceneObject(&cube1);
   scene.addSceneObject(&cube2);
-  scene.addSceneObject(&cube3);
+  scene.addSceneObject(&cube3);//*/
+
+  DebugHud hud = DebugHud();
+  scene.addSceneObject(&hud);
 
   context.setScene(&scene);
 
   // run program
   context.run();
 
-  printf("Closing program");
+  printf("Closing program\n");
 
   delete(program);
   return 0;

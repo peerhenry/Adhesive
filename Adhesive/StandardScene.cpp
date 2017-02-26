@@ -24,7 +24,7 @@ void StandardScene::addSceneObject(SceneObject* sceneObject) {
   // objects should be initialized when they are added to scene because they may be added runtime.
 }
 
-/*
+/* // old stuff, kept for file reading reference
 void loadShader(GLuint handle, char* fileName) {
   std::ifstream inFile;
   inFile.open(fileName); //open the input file

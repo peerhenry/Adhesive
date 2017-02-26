@@ -20,13 +20,17 @@ void SimpleProgram::initialize() {
   program->compileShader("basic.frag");
   program->link();
   program->validate();
-  program->use();
+  program->use();//
 
+  glm::vec4 cc = glm::vec4(100.0 / 256, 149.0 / 256, 237.0 / 256, 1);
+  glClearColor(cc.r, cc.g, cc.b, cc.a);
+  glShadeModel(GL_SMOOTH);
   glEnable(GL_DEPTH_TEST);
   glDepthFunc(GL_LESS);
-
   glEnable(GL_CULL_FACE);
-  glFrontFace(GL_CW);// clockwise faces are front
+  glFrontFace(GL_CW);     // clockwise faces are front
+  glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);  // Really Nice Perspective Calculations
+  glEnable(GL_MULTISAMPLE);
 }
 
 void SimpleProgram::setProjectionView(mat4 pv) {
