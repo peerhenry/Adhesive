@@ -1,7 +1,7 @@
 #pragma once
 #include "BasicObject.h"
 #include "PniBuffer.h"
-class Cube : public BasicObject
+class Rectangle : public BasicObject
 {
 private:
   SimpleProgram* glProgram;
@@ -9,11 +9,12 @@ private:
   mat4 modelMatrix;
   vec3 color;
 public:
-  Cube(SimpleProgram* glProgram);
-  ~Cube();
+  Rectangle(SimpleProgram* glProgram);
+  ~Rectangle();
   void initialize();
   void update(double dt);
   void render();
   void translate(float x, float y, float z);
   void setColor(float r, float g, float b);
 };
+

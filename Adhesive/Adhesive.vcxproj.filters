@@ -19,34 +19,31 @@
     <Filter Include="Header Files\glfw\Interfaces">
       <UniqueIdentifier>{7255ae5c-768c-4d27-854a-82282f815c02}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\main">
-      <UniqueIdentifier>{1d465548-76eb-4d72-8c39-3392fede1643}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\peg">
       <UniqueIdentifier>{9d7aa5e1-872c-41ab-b163-7fd55dc4a0d0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\peg">
       <UniqueIdentifier>{1ac3a8e7-9a9a-4a50-8bba-65e1fbb1af88}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\main">
-      <UniqueIdentifier>{bd2ece4d-8860-40d2-a320-471d9a30efc0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\glfw">
       <UniqueIdentifier>{f1796afd-a1c9-4266-99b2-be2c732e75f5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\glsl">
+      <UniqueIdentifier>{9c2e53b7-a83e-4eb8-961e-d9eb866ba4ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\glsl">
+      <UniqueIdentifier>{5bc9d764-2a8e-4902-91ab-0f2283a7446b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\demo">
+      <UniqueIdentifier>{bd2ece4d-8860-40d2-a320-471d9a30efc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\demo">
+      <UniqueIdentifier>{1d465548-76eb-4d72-8c39-3392fede1643}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GlslProgram.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="glutils.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files\main</Filter>
-    </ClCompile>
     <ClCompile Include="MyInputHandler.cpp">
-      <Filter>Source Files\main</Filter>
+      <Filter>Source Files\demo</Filter>
     </ClCompile>
     <ClCompile Include="GlfwContext.cpp">
       <Filter>Source Files\glfw</Filter>
@@ -55,7 +52,7 @@
       <Filter>Source Files\glfw</Filter>
     </ClCompile>
     <ClCompile Include="SimpleProgram.cpp">
-      <Filter>Source Files\main</Filter>
+      <Filter>Source Files\demo</Filter>
     </ClCompile>
     <ClCompile Include="StandardCamera.cpp">
       <Filter>Source Files\peg</Filter>
@@ -64,17 +61,32 @@
       <Filter>Source Files\peg</Filter>
     </ClCompile>
     <ClCompile Include="Cube.cpp">
-      <Filter>Source Files\main</Filter>
+      <Filter>Source Files\demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\demo</Filter>
+    </ClCompile>
+    <ClCompile Include="GlslProgram.cpp">
+      <Filter>Source Files\glsl</Filter>
+    </ClCompile>
+    <ClCompile Include="glutils.cpp">
+      <Filter>Source Files\glsl</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicObject.cpp">
+      <Filter>Source Files\demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Demo.cpp">
+      <Filter>Source Files\demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PniBuffer.cpp">
+      <Filter>Source Files\demo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GlslProgram.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="glutils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GlfwCallbackProvider.h">
@@ -90,10 +102,10 @@
       <Filter>Header Files\glfw</Filter>
     </ClInclude>
     <ClInclude Include="Cube.h">
-      <Filter>Header Files\main</Filter>
+      <Filter>Header Files\demo</Filter>
     </ClInclude>
     <ClInclude Include="SimpleProgram.h">
-      <Filter>Header Files\main</Filter>
+      <Filter>Header Files\demo</Filter>
     </ClInclude>
     <ClInclude Include="StandardCamera.h">
       <Filter>Header Files\peg</Filter>
@@ -102,7 +114,25 @@
       <Filter>Header Files\peg</Filter>
     </ClInclude>
     <ClInclude Include="MyInputHandler.h">
-      <Filter>Header Files\main</Filter>
+      <Filter>Header Files\demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files\demo</Filter>
+    </ClInclude>
+    <ClInclude Include="GlslProgram.h">
+      <Filter>Header Files\glsl</Filter>
+    </ClInclude>
+    <ClInclude Include="glutils.h">
+      <Filter>Header Files\glsl</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicObject.h">
+      <Filter>Header Files\demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Demo.h">
+      <Filter>Header Files\demo</Filter>
+    </ClInclude>
+    <ClInclude Include="PniBuffer.h">
+      <Filter>Header Files\demo</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

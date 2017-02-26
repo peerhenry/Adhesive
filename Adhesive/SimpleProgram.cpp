@@ -21,6 +21,12 @@ void SimpleProgram::initialize() {
   program->link();
   program->validate();
   program->use();
+
+  glEnable(GL_DEPTH_TEST);
+  glDepthFunc(GL_LESS);
+
+  glEnable(GL_CULL_FACE);
+  glFrontFace(GL_CW);// clockwise faces are front
 }
 
 void SimpleProgram::setProjectionView(mat4 pv) {
